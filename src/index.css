@@ -1,13 +1,86 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.navbar h1 {
+  color: coral;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar a:hover {
+  color: #9c3f44fa;
+}
+
+.navbar a:last-child {
+  color: white;
+  background-color: rgb(201, 87, 45);
+  border-radius: 9px;
+}
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* blog preview */
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.blog-preview h3 {
+  font-size: 20px;
+  color: coral;
+  margin-bottom: 8px;
+}
+
+.blog-preview span {
+  font-size: 13px;
+  font-style: italic;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.blog-preview button {
+  border: none;
+  border-radius: 10px;
+  background-color: slategray;
+  color: #fafafa;
+  padding: 8px;
+  margin-top: 10px;
+  outline: none;
+}
+
+.blog-preview button:hover {
+  background-color: #cf1212;
+  cursor: pointer;
 }
