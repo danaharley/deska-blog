@@ -4,13 +4,7 @@
       "title": "My First Articles",
       "body": "Lorem ipsum ....",
       "author": "Dana",
-      "id": 2
-    },
-    {
-      "title": "My Second Articles",
-      "body": "Lorem ipsum ....",
-      "author": "Harliansyah",
-      "id": 3
+      "id": 1
     }
   ]
 }
