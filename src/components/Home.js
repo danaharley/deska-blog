@@ -7,7 +7,12 @@ const Home = () => {
   );
 
   const handleDelete = (id) => {
-    setData(blogs.filter((blog) => blog.id !== id));
+    fetch(`http://localhost:8000/blogs/${id}`, {
+      method: "DELETE",
+    }).then(() => {
+      setData(blogs.filter((blog) => blog.id !== id));
+      console.log("Blog successfully Deleted!");
+    });
   };
 
   return (

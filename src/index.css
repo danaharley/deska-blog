@@ -30,12 +30,12 @@
 }
 
 .navbar a:hover {
-  color: #9c3f44fa;
+  color: coral;
 }
 
 .navbar a:last-child {
   color: white;
-  background-color: rgb(201, 87, 45);
+  background-color: coral;
   border-radius: 9px;
 }
 
@@ -97,4 +97,41 @@
   font-weight: 500;
   font-style: italic;
   text-align: center;
+}
+
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.create label {
+  text-align: left;
+  display: block;
+}
+
+.create h2 {
+  font-size: 20px;
+  color: coral;
+  margin-bottom: 30px;
+}
+
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.create button {
+  background: coral;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
 }
