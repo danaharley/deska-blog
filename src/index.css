@@ -160,3 +160,33 @@
   cursor: pointer;
   outline: none;
 }
+
+.not-found {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.not-found h2,
+p {
+  padding-bottom: 20px;
+}
+
+.not-found h2 {
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.not-found p {
+  font-size: 20px;
+}
+
+.not-found button {
+  margin-top: 20px;
+  outline: none;
+  padding: 9px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  background: coral;
+  cursor: pointer;
+}

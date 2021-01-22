@@ -1,8 +1,9 @@
-import { useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 
 const BlogDetail = () => {
   const { id } = useParams();
+  const history = useHistory();
 
   const { data: blog, isLoading, error } = useFetch(
     `http://localhost:8000/blogs/${id}`
@@ -18,7 +19,7 @@ const BlogDetail = () => {
           <h2>{blog.title}</h2>
           <div>{blog.body}</div>
           <p>Written by: {blog.author}</p>
-          <button>Back</button>
+          <button onClick={() => history.push("/")}>Back</button>
         </article>
       )}
     </div>
